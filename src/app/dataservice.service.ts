@@ -16,10 +16,22 @@ export class DataserviceService {
     return this.hc.get<movieinfo>('http://localhost:3000/items')
   }
 
-  gettop250tvshows()
+  gettop250tvshows():Observable<movieinfo>
   {
     return this.hc.get<movieinfo>('http://localhost:3000/items2')
   }
 
+  getRecentHits():Observable<any>
+  {
+    return this.hc.get<any>('http://localhost:3000/items3')
+  }
+
+  getInTheatres():Observable<any>{
+    return this.hc.get<any>('http://localhost:3000/items4')
+  }
+
+  getTop150AsianMovies():Observable<any>{
+    return this.hc.get<any>('http://localhost:3000/items5')
+  }
 
 }

@@ -13,6 +13,10 @@ import { Top250MoviesComponent } from './top250-movies/top250-movies.component';
 import { Top250TvShowsComponent } from './top250-tv-shows/top250-tv-shows.component';
 import { InfoComponent } from './info/info.component';
 import { TvInfoComponent } from './tv-info/tv-info.component';
+import { RecentHitsComponent } from './recent-hits/recent-hits.component';
+import { InTheatresComponent } from './in-theatres/in-theatres.component';
+import { Top150AsianMoviesComponent } from './top150-asian-movies/top150-asian-movies.component';
+import { AsianMovieInfoComponent } from './asian-movie-info/asian-movie-info.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { TvInfoComponent } from './tv-info/tv-info.component';
     Top250MoviesComponent,
     Top250TvShowsComponent,
     InfoComponent,
-    TvInfoComponent
+    TvInfoComponent,
+    RecentHitsComponent,
+    InTheatresComponent,
+    Top150AsianMoviesComponent,
+    AsianMovieInfoComponent
   ],
   imports: [
     BrowserModule,

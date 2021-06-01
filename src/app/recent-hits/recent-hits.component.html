@@ -1,0 +1,33 @@
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5">
+<div class="col" *ngFor="let recentHitObj of recentHitsData;let ind=index">
+<div class="card m-3">
+    <img class="d-block mx-auto" src="{{recentHitObj.image}}" width="100%">
+     <div class="card-footer">
+          <p>{{recentHitObj.title}}</p>
+             
+            <button class="btn btn-secondary d-inline float-end " [attr.data-bs-target]="'#card'+ind" data-bs-toggle="modal" >explore more</button>
+                <div class="modal" [attr.id]="'card'+ind" data-bs-backdrop="static">
+                 <div class="modal-dialog">
+                    <div class="modal-content">
+                            <div class="modal-body">
+                                <button class="btn btn-danger float-end" data-bs-dismiss="modal">X</button>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <img src="{{recentHitObj.image}}" width="100%">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="ms-5 mt-5">
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button class="btn btn-warning float-end ">yy</button>
+                            </div>
+                            
+                        </div>      
+                    </div>
+                </div>
+        </div>
+        </div>
+        </div>

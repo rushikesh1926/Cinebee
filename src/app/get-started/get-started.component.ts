@@ -16,7 +16,18 @@ export class GetStartedComponent implements OnInit {
   onExploreTopRec()
   {
     this.router.navigateByUrl('toprecommendations')
-
   }
+
+  onExploreRecHits()
+  {
+    this.router.navigateByUrl('recenthits')
+  }
+
+  onExploreInTheatres()
+  {
+    this.router.navigateByUrl('inTheatres')
+  }
+
+
 
 }
