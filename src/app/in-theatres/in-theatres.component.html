@@ -1,5 +1,8 @@
+<input type="text" name="" id="" placeholder="search here" class="form-control m-3  w-50" [(ngModel)]="searchTerm">
+
+
 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5">
-    <div class="col" *ngFor="let inTheatreObj of InTheatresData;let ind=index">
+    <div class="col" *ngFor="let inTheatreObj of InTheatresData | search:searchTerm;let ind=index">
     <div class="card m-3">
         <img class="d-block mx-auto" src="{{inTheatreObj.image}}" width="100%">
          <div class="card-footer">

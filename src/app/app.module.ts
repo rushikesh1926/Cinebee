@@ -17,6 +17,8 @@ import { RecentHitsComponent } from './recent-hits/recent-hits.component';
 import { InTheatresComponent } from './in-theatres/in-theatres.component';
 import { Top150AsianMoviesComponent } from './top150-asian-movies/top150-asian-movies.component';
 import { AsianMovieInfoComponent } from './asian-movie-info/asian-movie-info.component';
+import {FormsModule} from '@angular/forms';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
@@ -34,12 +36,13 @@ import { AsianMovieInfoComponent } from './asian-movie-info/asian-movie-info.com
     RecentHitsComponent,
     InTheatresComponent,
     Top150AsianMoviesComponent,
-    AsianMovieInfoComponent
+    AsianMovieInfoComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

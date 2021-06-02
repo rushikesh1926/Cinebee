@@ -10,6 +10,7 @@ import { movieinfo } from '../models/top250movies.model';
 })
 export class Top250MoviesComponent{
   
+  searchTerm:any;
   moviedata:any;
   constructor(private dsObj:DataserviceService) { }
   

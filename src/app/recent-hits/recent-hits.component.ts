@@ -8,6 +8,7 @@ import { DataserviceService } from '../dataservice.service';
 })
 export class RecentHitsComponent implements OnInit {
 
+  searchTerm:any;
   recentHitsData:any;
   constructor(private dsobj:DataserviceService) { }
 

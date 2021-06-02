@@ -1,5 +1,7 @@
+<input type="text" name="" id="" placeholder="search here"  class="form-control w-50 m-3" [(ngModel)]="searchTerm">
+
 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5">
-<div class="col" *ngFor="let recentHitObj of recentHitsData;let ind=index">
+<div class="col" *ngFor="let recentHitObj of recentHitsData | search:searchTerm;let ind=index">
 <div class="card m-3">
     <img class="d-block mx-auto" src="{{recentHitObj.image}}" width="100%">
      <div class="card-footer">

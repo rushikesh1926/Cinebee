@@ -9,7 +9,7 @@ import { DataserviceService } from '../dataservice.service';
 export class Top150AsianMoviesComponent {
 
   asianMovieData:any;
-
+  searchTerm:any;
   constructor(private dsobj:DataserviceService) { }
 
   ngOnInit(): void {

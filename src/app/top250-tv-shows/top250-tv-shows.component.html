@@ -1,5 +1,7 @@
+<input type="text" name="" id="" class="w-50 form-control" placeholder="search here" [(ngModel)]="searchTerm">
+
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 ">
-    <div class="col p-5" *ngFor="let tvobj of tvShowData">
+    <div class="col p-5" *ngFor="let tvobj of tvShowData |search:searchTerm">
         <app-tv-info [tvshowsobj]=tvobj></app-tv-info>
     </div>
 </div>

@@ -1,5 +1,6 @@
+<input type="text" class="w-50 form-control" placeholder="search here" [(ngModel)]="searchTerm">
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 ">
-    <div class="col p-5 " *ngFor="let movieinfo of moviedata;let ind=index">
+    <div class="col p-5 " *ngFor="let movieinfo of moviedata |search :searchTerm;let ind=index">
         <app-info [movieobj]=movieinfo></app-info>
     </div>
 </div>

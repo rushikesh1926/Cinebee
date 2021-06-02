@@ -8,6 +8,7 @@ import { DataserviceService } from '../dataservice.service';
 })
 export class InTheatresComponent implements OnInit {
 
+  searchTerm:any;
   InTheatresData:any;
   constructor(private dsobj:DataserviceService) { }
 
