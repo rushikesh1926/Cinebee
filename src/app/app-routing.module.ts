@@ -7,6 +7,7 @@ import { InTheatresComponent } from './in-theatres/in-theatres.component';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RecentHitsComponent } from './recent-hits/recent-hits.component';
+import { RegisterComponent } from './register/register.component';
 import { TopRecommendationsComponent } from './top-recommendations/top-recommendations.component';
 import { Top150AsianMoviesComponent } from './top150-asian-movies/top150-asian-movies.component';
 import { Top250MoviesComponent } from './top250-movies/top250-movies.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'recenthits',component:RecentHitsComponent},
   {path:'inTheatres',component:InTheatresComponent},
+  {path:'register',component:RegisterComponent},
   {path:'toprecommendations',component:TopRecommendationsComponent ,children:[
     {path:'top250movies',component:Top250MoviesComponent},
     {path:'top250tvshows',component:Top250TvShowsComponent},

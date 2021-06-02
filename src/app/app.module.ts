@@ -19,6 +19,8 @@ import { Top150AsianMoviesComponent } from './top150-asian-movies/top150-asian-m
 import { AsianMovieInfoComponent } from './asian-movie-info/asian-movie-info.component';
 import {FormsModule} from '@angular/forms';
 import { SearchPipe } from './search.pipe';
+import {NgxPaginationModule} from 'ngx-pagination';
+import { RegisterComponent } from './register/register.component'
 
 @NgModule({
   declarations: [
@@ -37,12 +39,13 @@ import { SearchPipe } from './search.pipe';
     InTheatresComponent,
     Top150AsianMoviesComponent,
     AsianMovieInfoComponent,
-    SearchPipe
+    SearchPipe,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,FormsModule
+    HttpClientModule,FormsModule,NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

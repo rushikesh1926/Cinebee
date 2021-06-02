@@ -8,6 +8,7 @@ import { DataserviceService } from '../dataservice.service';
 })
 export class Top250TvShowsComponent implements OnInit {
 
+  p=1;
   searchTerm:any;
   tvShowData:any;
   constructor(private dsObj:DataserviceService) { }

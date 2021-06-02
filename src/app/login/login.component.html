@@ -10,10 +10,14 @@
                 <label for="pw" class="form-label">Password</label>
                 <input type="text" id="pw" name="Password" class="form-control" >
             </div> 
+            <div class="text-center mt-3">
+            <button class="btn btn-success">login</button>
+            <p class="lead mt-2">Dont have an account?</p>
+            <p><a routerLinkActive="active" routerLink="register" (click)="onRegister()">Register</a></p>
+            </div>
 
-
-            <button class="btn btn-success d-block mx-auto mt-3"> login </button>
         </form>
+
     </div>
 
 </div>

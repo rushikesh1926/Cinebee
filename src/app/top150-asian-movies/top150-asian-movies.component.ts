@@ -8,6 +8,7 @@ import { DataserviceService } from '../dataservice.service';
 })
 export class Top150AsianMoviesComponent {
 
+  p=1;
   asianMovieData:any;
   searchTerm:any;
   constructor(private dsobj:DataserviceService) { }

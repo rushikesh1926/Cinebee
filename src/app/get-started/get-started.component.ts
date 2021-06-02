@@ -28,6 +28,8 @@ export class GetStartedComponent implements OnInit {
     this.router.navigateByUrl('inTheatres')
   }
 
+  
+
 
 
 }

@@ -1,7 +1,11 @@
 <input type="text" name="" id="" class="w-50 form-control" placeholder="search here" [(ngModel)]="searchTerm">
 
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 ">
-    <div class="col p-5" *ngFor="let tvobj of tvShowData |search:searchTerm">
+    <div class="col p-5" *ngFor="let tvobj of tvShowData |search:searchTerm | paginate: { itemsPerPage:15, currentPage:p}">
         <app-tv-info [tvshowsobj]=tvobj></app-tv-info>
     </div>
+</div>
+
+<div class="text-center">
+    <pagination-controls (pageChange)="p=$event"></pagination-controls>
 </div>

@@ -1,7 +1,10 @@
 <input type="text" name="" id="" placeholder="search here" class="w-50 form-control" [(ngModel)]="searchTerm">
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 ">
-    <div class="col p-5" *ngFor="let asianObj of asianMovieData |search:searchTerm">
+    <div class="col p-5" *ngFor="let asianObj of asianMovieData |search:searchTerm | paginate: { itemsPerPage:15, currentPage:p}">
         <app-asian-movie-info [asianMovieObj]=asianObj></app-asian-movie-info>
     </div>
 </div>
 
+<div class="text-center">
+    <pagination-controls (pageChange)="p=$event"></pagination-controls>
+</div>
