@@ -1,0 +1,99 @@
+  
+  .kk {
+    position: absolute;
+    height: 35em;
+    top: 5rem;
+    width: 75%;
+    display: flex;
+  }
+  
+  .car {
+    display: flex;
+    background-color: #17141d;
+    width: 20rem;
+    height: 25rem;
+    border-radius:0.8rem;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+  
+  .car:not(:first-child) {
+      margin-left: -3rem;
+  }
+  
+  .car:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .car:hover ~ .card {
+    position: relative;
+    left: 5rem;
+    transition: 0.4s ease-out;
+  }
+  
+  .title {
+    color: white;
+    
+    position: absolute;
+    left: 1.2rem;
+    top: 1rem;
+  }
+  
+  .bar {
+    position: absolute;
+    top: 6rem;
+    left: 1rem;
+    height: 0.5rem;
+    width: 10rem;
+  }
+  
+  
+  
+  .filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+    transition: 0.6s ease-out;
+  }
+  
+  .card:hover .filledbar {
+    width: 60%;
+    transition: 0.4s ease-out;
+  }
+  
+  
+  
+  .stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+  }
+  
+  svg {
+    fill: #17141d;
+    stroke-width: 0.2rem;
+  }
+  
+  .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }
+
+
+  @media screen and (min-width:320px) and (max-width:780px){
+     
+    .pk{
+        max-width: 90%;
+    }
+    .kk{
+        width: 100%;
+    }
+  }

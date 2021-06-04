@@ -20,7 +20,8 @@ import { AsianMovieInfoComponent } from './asian-movie-info/asian-movie-info.com
 import {FormsModule} from '@angular/forms';
 import { SearchPipe } from './search.pipe';
 import {NgxPaginationModule} from 'ngx-pagination';
-import { RegisterComponent } from './register/register.component'
+import { RegisterComponent } from './register/register.component';
+import { DummyComponent } from './dummy/dummy.component'
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { RegisterComponent } from './register/register.component'
     Top150AsianMoviesComponent,
     AsianMovieInfoComponent,
     SearchPipe,
-    RegisterComponent
+    RegisterComponent,
+    DummyComponent
   ],
   imports: [
     BrowserModule,

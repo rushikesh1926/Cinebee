@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AsianMovieInfoComponent } from './asian-movie-info/asian-movie-info.component';
+import { DummyComponent } from './dummy/dummy.component';
 import { GetStartedComponent } from './get-started/get-started.component';
 import { HomeComponent } from './home/home.component';
 import { InTheatresComponent } from './in-theatres/in-theatres.component';
@@ -14,6 +15,7 @@ import { Top250MoviesComponent } from './top250-movies/top250-movies.component';
 import { Top250TvShowsComponent } from './top250-tv-shows/top250-tv-shows.component';
 
 const routes: Routes = [
+  {path:'dummy',component:DummyComponent},
   {path:'home',component:HomeComponent},
   {path:'getstarted',component:GetStartedComponent},
   {path:'login',component:LoginComponent},
